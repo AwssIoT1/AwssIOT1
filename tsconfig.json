@@ -1,0 +1,58 @@
+{
+    "compilerOptions": {
+      "allowJs": false,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "isolatedModules": true,
+      "jsx": "react-native",
+      "lib": ["es2017"],
+      "watch": true,
+      "moduleResolution": "node",
+      "noEmit": false, /* TO create output files */
+      "strict": true,
+      "target": "esnext", /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019' or 'ESNEXT'. */
+      "outDir": "Output", /* Redirect output structure to the directory. */
+      "rootDir": "src", /* Specify the root directory of input files. */
+      "skipLibCheck": true, /* TO FIX : error TS2300: Duplicate identifier 'AbortController' */
+      "module": "commonjs",
+      "sourceMap": true,
+      "noImplicitAny": true,
+      "baseUrl": ".", /* Base directory to resolve non-absolute module names. */
+      "paths": {
+        "*": ["src/*"],
+        "tests": ["tests/*"],
+        "@components/*": ["src/components/*"],
+        // "@Navigation/*": ["src/components/Navigation/*"],
+      },
+      // "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */
+      //  "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */ /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
+    },
+    "filesGlob": [
+        "typings/index.d.ts",
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "node_modules/typescript/lib/lib.es6.d.ts"
+      ],
+      "types": [
+        "react",
+        "react-dom",
+        "react-native",
+        "react-test-renderer",
+        "jest"
+      ],
+      "include": ["./src/**/*"],
+    "exclude": [
+         "Output",
+        "index.js",
+        ".eslintrc.js",
+        ".prettirerrc.js",
+        ".watchmanconfig",
+        "app.json",
+      "node_modules",
+      "babel.config.js",
+      "metro.config.js",
+      "jest.config.js"
+
+    ],
+    "compileOnSave": false
+  }
