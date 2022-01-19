@@ -11,24 +11,30 @@
     "tsc": "tsc",
     "clean": "rimraf build ",
     "clean2": "rm -r android\build",
-    "build": "npm run clean &&  npm run clean2 && yarn tsc",
+    "build": "npm run clean &&  npm run clean && yarn tsc",
     "watch": "npm run build -- -w",
     "watchAndRunAndroid": "concurrently \"npm run watch\" \"npm run android\"",
-    "buildRunAndroid": "npm run build && npm run watchAndRunAndroid "
+    "buildRunAndroid": "npm run build && npm run watchAndRunAndroid ",
+    "start2": "npm run start && npm run android"
   },
   "dependencies": {
+    "@react-native-community/art": "^1.2.0",
     "@react-native-community/masked-view": "^0.1.11",
     "@react-native-community/netinfo": "^7.1.7",
     "@react-navigation/bottom-tabs": "^6.0.9",
     "@react-navigation/native": "^6.0.6",
+    "@types/react-gauge-chart": "^0.3.1",
     "@types/react-native-vector-icons": "^6.4.10",
     "pusher-js": "^7.0.3",
     "react": "17.0.2",
+    "react-gauge-chart": "^0.4.0",
     "react-native": "0.66.4",
     "react-native-gesture-handler": "^2.1.0",
     "react-native-reanimated": "2.2.4",
     "react-native-safe-area-context": "^3.3.2",
-    "react-native-screens": "^3.10.1"
+    "react-native-screens": "^3.10.1",
+    "react-native-simple-gauge": "^0.3.1",
+    "svg-gauge": "^1.0.6"
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",

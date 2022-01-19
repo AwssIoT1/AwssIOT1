@@ -2,7 +2,7 @@ import * as React from 'react';
 import { StyleSheet, Text, Image, View, TouchableOpacity } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
-import HomeScreen from 'components/screens/HomeScreen';
+import PowerScreen from 'components/screens/PowerScreen';
 
 
 const Tab   = createBottomTabNavigator();
@@ -15,10 +15,10 @@ function NavFooter() {
       screenOptions={{
         tabBarActiveTintColor: '#e91e63',
       }}>
-      <Tab.Screen name="Power" component={HomeScreen} options={{
+      <Tab.Screen name="Power" component={PowerScreen} options={{
           tabBarLabel: 'Home',
           }}/>
-      <Tab.Screen name="WMS" component={HomeScreen} options={{
+      <Tab.Screen name="WMS" component={PowerScreen} options={{
           tabBarLabel: 'Updates',
           tabBarBadge: 3,
         }}/>
